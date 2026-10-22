@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Unraid Dash support"><title>Unraid Dash support</title><link rel="stylesheet" href="style.css"><link rel="icon" href="icon.png"></head><body><header><img src="icon.png" width="52" height="52" alt=""><strong>Unraid Dash</strong><nav aria-label="Help pages"><a href="./">Support</a><a href="privacy.html">Privacy</a></nav></header><main><h1>Unraid Dash support</h1>
+<p>Last updated October 22, 2026.</p>
+<p>Unraid Dash is a native client for your own Unraid 7.2 or later server on Mac, iPhone and iPad. It requires macOS 26 or later or iOS/iPadOS 26 or later. Your device must be able to reach your server, and server management features require the corresponding API permissions.</p>
+<h2>Try the app without a server</h2>
+<p>Choose <strong>Try with demo data</strong> on the welcome screen. If you have already added a server, turn on <strong>Show demo server</strong> in Settings and select <strong>Tower</strong>, the demo server. The demo uses sample data and does not connect to a real server.</p>
+<h2>Connection help</h2>
+<ul>
+<li><strong>Cannot reach the server:</strong> join the server's local network or enable your separately configured Tailscale connection. Check the server address and open Diagnostics in Settings to see route results.</li>
+<li><strong>Local network access:</strong> allow Unraid Dash's Local Network permission in your device's privacy settings when connecting over the LAN.</li>
+<li><strong>API unavailable:</strong> check Unraid's <strong>Settings → Management Access → Unraid API Status</strong> and confirm the server runs Unraid 7.2 or later.</li>
+<li><strong>Tailscale route unavailable:</strong> confirm your device and server are reachable through Tailscale and that the Unraid Tailscale plugin's <strong>Unraid services listen on Tailscale IP</strong> setting is enabled.</li>
+<li><strong>Waiting for iCloud Keychain:</strong> confirm iCloud Keychain is available for your Apple account and allow time for credentials to sync. Use <strong>Paste API key</strong> or <strong>Reconnect</strong> if needed.</li>
+<li><strong>An action is not permitted:</strong> check that the API key grants the relevant operation. A Viewer key supports monitoring; management requires additional permissions. A full-admin key is unnecessary.</li>
+<li><strong>A web UI stops signing in:</strong> check its saved login and <strong>Fill and sign in</strong> setting. A failed automatic sign-in changes the saved login to fill-only; correct the login before enabling it again.</li>
+<li><strong>A certificate warning appears:</strong> verify the server and certificate independently before trusting a new or changed certificate. Use HTTPS with certificate verification or your trusted Tailscale connection on networks you do not trust.</li>
+</ul>
+<h2>Saved information</h2>
+<p>Saved logins can be edited or removed in Settings. <strong>Sign out of all web UIs</strong> clears website data for a server. Clearing a host's data signs out web UIs on that host across ports. Deleting a server requests removal of its app profile, saved credentials, cached snapshot, certificate pins and web data; it does not revoke API keys or remove content from the server itself.</p>
+<p>See the <a href="https://sequoyahgeber.github.io/unraid-dash-support/privacy.html">privacy policy</a> for local storage, iCloud sync, icon downloads and information you may choose to share.</p>
+<h2>Report a problem</h2>
+<p>Email <a href="mailto:sequoyahgeber@gmail.com">sequoyahgeber@gmail.com</a>. Include your device model, operating-system version, app version/build, Unraid version, the steps that caused the problem and what you expected. Say whether it also happens with demo data. Screenshots or Diagnostics → <strong>Copy logs</strong> can help if you choose to include them. Copying logs does not send them automatically.</p>
+<p>Review reports before sending. Do not include API keys, passwords, full server addresses, private web UI content or other personal information. There is no need to provide access to your server to file a report.</p></main><footer>Unraid Dash for Mac, iPhone and iPad · Independent client for your own Unraid server.<br><a href="mailto:sequoyahgeber@gmail.com">Contact support</a></footer></body></html>
