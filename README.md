@@ -5,4 +5,4 @@ Public support and privacy documents for Unraid Dash. This repository contains n
 - [Support](https://sequoyahgeber.github.io/unraid-dash-support/)
 - [Privacy](https://sequoyahgeber.github.io/unraid-dash-support/privacy.html)
 
-Contact: sequoyahgeber@gmail.com
+Contact: in the app, Settings › Help › Send feedback.
